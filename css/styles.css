@@ -699,8 +699,8 @@ p:last-child {
 
 .vision-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-  gap: 2.25rem 2.75rem;
+  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+  gap: 2.25rem 2.5rem;
   align-items: center;
 }
 
@@ -1046,6 +1046,12 @@ p:last-child {
     min-width: 0;
   }
 
+  .brand strong {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
   .site-nav {
     display: none;
     position: absolute;
@@ -1064,12 +1070,21 @@ p:last-child {
   }
 
   .site-nav a {
-    padding: 0.85rem 1.2rem;
+    padding: 0.95rem 1.2rem;
+    min-height: 2.75rem;
   }
 
   .hero {
-    min-height: clamp(380px, 52vh, 480px);
-    padding-bottom: 2rem;
+    min-height: clamp(340px, 58svh, 460px);
+    padding-bottom: 1.75rem;
+  }
+
+  .hero-copy {
+    max-width: none;
+  }
+
+  .hero-lead {
+    max-width: none;
   }
 
   .about-grid,
@@ -1086,7 +1101,27 @@ p:last-child {
   }
 
   .vision-section {
-    padding: 2.75rem 0;
+    padding: 2.5rem 0;
+  }
+
+  .vision-grid {
+    gap: 1.35rem;
+  }
+
+  .vision-media {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
+  .vision-media img {
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .vision-media figcaption {
+    padding: 0 1.25rem;
   }
 
   .amenity-list li,
@@ -1110,17 +1145,42 @@ p:last-child {
   }
 
   .section {
-    padding: 3.5rem 0;
+    padding: 3.25rem 0;
   }
 
+  .map-card iframe {
+    min-height: 240px;
+  }
 
   .journal-list li {
     grid-template-columns: 1fr;
     gap: 0.35rem;
   }
+
+  .contact-direct {
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .contact-direct span[aria-hidden="true"] {
+    display: none;
+  }
+
+  .faq-item summary {
+    padding: 1.05rem 1.15rem;
+    min-height: 3rem;
+  }
 }
 
 @media (max-width: 700px) {
+  .wrap {
+    padding: 0 1rem;
+  }
+
+  .nav-inner {
+    padding: 0 1rem;
+  }
+
   .highlights-grid {
     grid-template-columns: 1fr;
     gap: 1.1rem;
@@ -1129,6 +1189,15 @@ p:last-child {
   .highlight:not(:last-child) {
     padding-bottom: 1.1rem;
     border-bottom: 1px solid rgba(196, 163, 90, 0.28);
+  }
+
+  .timeline {
+    padding-left: 0.15rem;
+  }
+
+  .map-card figcaption {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -1139,6 +1208,10 @@ p:last-child {
 
   .signup-form {
     flex-direction: column;
+  }
+
+  .signup-form .btn {
+    width: 100%;
   }
 
   .brand small {
@@ -1157,8 +1230,29 @@ p:last-child {
     font-size: 1.02rem;
   }
 
+  .hero-note {
+    font-size: 0.78rem;
+  }
+
   h1 {
-    font-size: clamp(2rem, 10vw, 2.6rem);
+    font-size: clamp(1.85rem, 9vw, 2.45rem);
+  }
+
+  h2 {
+    font-size: clamp(1.4rem, 6.5vw, 1.85rem);
+  }
+
+  .section-intro {
+    margin-bottom: 1.75rem;
+    text-align: left;
+  }
+
+  .updates-inner {
+    text-align: left;
+  }
+
+  .updates-inner .btn {
+    width: 100%;
   }
 }
 
