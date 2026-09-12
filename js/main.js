@@ -24,12 +24,6 @@
         setMenu(false);
       });
     });
-
-    document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape") {
-        setMenu(false);
-      }
-    });
   }
 
   function onScroll() {
@@ -107,6 +101,56 @@
       }
     });
   }
+
+  var lightbox = document.getElementById("lightbox");
+  var lightboxImage = document.getElementById("lightbox-image");
+  var lightboxTriggers = document.querySelectorAll(".js-lightbox-trigger");
+  var lastLightboxTrigger = null;
+
+  function openLightbox(trigger) {
+    if (!lightbox || !lightboxImage || !trigger) return;
+    lastLightboxTrigger = trigger;
+    lightboxImage.src = trigger.getAttribute("data-lightbox-src") || "";
+    lightboxImage.srcset = trigger.getAttribute("data-lightbox-srcset") || "";
+    lightboxImage.sizes = "100vw";
+    lightboxImage.alt = trigger.getAttribute("data-lightbox-alt") || "";
+    lightbox.hidden = false;
+    document.body.classList.add("lightbox-open");
+    var closeBtn = lightbox.querySelector(".lightbox-close");
+    if (closeBtn) closeBtn.focus();
+  }
+
+  function closeLightbox() {
+    if (!lightbox || !lightboxImage || lightbox.hidden) return;
+    lightbox.hidden = true;
+    document.body.classList.remove("lightbox-open");
+    lightboxImage.removeAttribute("src");
+    lightboxImage.removeAttribute("srcset");
+    lightboxImage.alt = "";
+    if (lastLightboxTrigger) {
+      lastLightboxTrigger.focus();
+      lastLightboxTrigger = null;
+    }
+  }
+
+  lightboxTriggers.forEach(function (trigger) {
+    trigger.addEventListener("click", function () {
+      openLightbox(trigger);
+    });
+  });
+
+  if (lightbox) {
+    lightbox.querySelectorAll("[data-lightbox-close]").forEach(function (el) {
+      el.addEventListener("click", closeLightbox);
+    });
+  }
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      closeLightbox();
+      setMenu(false);
+    }
+  });
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var revealEls = document.querySelectorAll(".reveal");

@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#1a4730">
-  <title>El Heffe RV Park | Coming Soon to Mena, Arkansas</title>
-  <meta name="description" content="El Heffe RV Park is coming soon to Mena, Arkansas — a laid-back, buggy-accessible RV park about 10 minutes from Wolf Pen Gap.">
-  <meta property="og:title" content="El Heffe RV Park — Coming Soon to Mena, Arkansas">
+  <title>El Hefe RV Park | Coming Soon to Mena, Arkansas</title>
+  <meta name="description" content="El Hefe RV Park is coming soon to Mena, Arkansas — a laid-back, buggy-accessible RV park about 10 minutes from Wolf Pen Gap.">
+  <meta property="og:title" content="El Hefe RV Park — Coming Soon to Mena, Arkansas">
   <meta property="og:description" content="A clean, comfortable RV park being developed near Mena, Arkansas. Opening information coming soon.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="images/hero.jpg">
@@ -26,7 +26,7 @@
       <a class="brand" href="#home">
         <img src="images/logo.png" alt="" width="48" height="48">
         <span>
-          <strong>El Heffe RV Park</strong>
+          <strong>El Hefe RV Park</strong>
           <small>Mena, Arkansas</small>
         </span>
       </a>
@@ -52,7 +52,13 @@
 
   <main id="main">
     <section class="hero" id="home">
-      <div class="hero-media" aria-hidden="true">
+      <button
+        type="button"
+        class="hero-media js-lightbox-trigger"
+        data-lightbox-src="images/hero-3840.jpg"
+        data-lightbox-srcset="images/hero.jpg 1712w, images/hero@2x.jpg 3424w, images/hero-3840.jpg 3840w"
+        data-lightbox-alt="Conceptual layout of El Hefe RV Park showing RV sites, pond, wash, and hangout areas."
+        aria-label="View larger park layout image">
         <img
           class="hero-bg"
           src="images/hero.jpg"
@@ -60,21 +66,23 @@
           sizes="100vw"
           width="1712"
           height="919"
-          alt=""
+          alt="Conceptual layout of El Hefe RV Park showing RV sites, pond, wash, and hangout areas."
           decoding="async"
           fetchpriority="high">
-      </div>
-      <div class="hero-shade" aria-hidden="true"></div>
+        <span class="hero-zoom-hint" aria-hidden="true">Tap to enlarge</span>
+      </button>
 
-      <div class="wrap hero-copy">
-        <p class="kicker">Coming Soon · Mena, Arkansas</p>
-        <h1>El Heffe RV Park</h1>
-        <p class="hero-lead">A laid-back, buggy-accessible stay about 10 minutes from Wolf Pen Gap — built for RVers, families, and riders who want a simple place to land in the Ouachitas.</p>
-        <div class="hero-actions">
-          <a class="btn btn-tan" href="#updates">Get Opening Updates</a>
-          <a class="btn btn-ghost" href="#progress">See the Build Plan</a>
+      <div class="hero-copy-panel">
+        <div class="wrap hero-copy">
+          <p class="kicker">Coming Soon · Mena, Arkansas</p>
+          <h1>El Hefe RV Park</h1>
+          <p class="hero-lead">A laid-back, buggy-accessible stay about 10 minutes from Wolf Pen Gap — built for RVers, families, and riders who want a simple place to land in the Ouachitas.</p>
+          <div class="hero-actions">
+            <a class="btn btn-tan" href="#updates">Get Opening Updates</a>
+            <a class="btn btn-ghost" href="#progress">See the Build Plan</a>
+          </div>
+          <p class="hero-note">Conceptual rendering · layout and amenities may change as we build</p>
         </div>
-        <p class="hero-note">Conceptual rendering · layout and amenities may change as we build</p>
       </div>
     </section>
 
@@ -103,8 +111,8 @@
           <p class="about-aside">We’re a local project putting down roots in Polk County — not a big-box campground chain.</p>
         </div>
         <div class="prose">
-          <p>We’re building El Heffe RV Park with a pretty simple idea: a clean, comfortable place to stay without turning camping into something it isn’t.</p>
-          <p>Near Mena, Arkansas, El Heffe will offer RV sites and a relaxed home base for people visiting the area, riding the trails, exploring the Ouachitas, fishing, traveling through town, or getting away for a while.</p>
+          <p>We’re building El Hefe RV Park with a pretty simple idea: a clean, comfortable place to stay without turning camping into something it isn’t.</p>
+          <p>Near Mena, Arkansas, El Hefe will offer RV sites and a relaxed home base for people visiting the area, riding the trails, exploring the Ouachitas, fishing, traveling through town, or getting away for a while.</p>
           <p>We’re about a 10-minute drive from Wolf Pen Gap, and the park is planned as buggy-accessible — so you can ride your side-by-side from your site toward the trails without loading up and trailering it over.</p>
           <p>We’re excited to call the Mena area home and look forward to becoming part of the local community.</p>
         </div>
@@ -256,18 +264,27 @@
         <div class="vision-copy">
           <p class="eyebrow on-dark">The vision</p>
           <h2>Sites, pond, wash &amp; hangout — one property</h2>
-          <p>This is our working concept for how El Heffe comes together. Real progress photos will replace this as soon as dirt starts moving.</p>
+          <p>This is our working concept for how El Hefe comes together. Real progress photos will replace this as soon as dirt starts moving.</p>
         </div>
         <figure class="vision-media">
-          <img
-            src="images/hero.jpg"
-            srcset="images/hero.jpg 1712w, images/hero@2x.jpg 3424w, images/hero-3840.jpg 3840w"
-            sizes="(max-width: 900px) 100vw, 800px"
-            width="1712"
-            height="919"
-            alt="Conceptual layout of El Heffe RV Park showing RV sites, pond, wash, and hangout areas."
-            loading="lazy"
-            decoding="async">
+          <button
+            type="button"
+            class="vision-media-btn js-lightbox-trigger"
+            data-lightbox-src="images/hero-3840.jpg"
+            data-lightbox-srcset="images/hero.jpg 1712w, images/hero@2x.jpg 3424w, images/hero-3840.jpg 3840w"
+            data-lightbox-alt="Conceptual layout of El Hefe RV Park showing RV sites, pond, wash, and hangout areas."
+            aria-label="View larger park layout image">
+            <img
+              src="images/hero.jpg"
+              srcset="images/hero.jpg 1712w, images/hero@2x.jpg 3424w, images/hero-3840.jpg 3840w"
+              sizes="(max-width: 900px) 100vw, 800px"
+              width="1712"
+              height="919"
+              alt="Conceptual layout of El Hefe RV Park showing RV sites, pond, wash, and hangout areas."
+              loading="lazy"
+              decoding="async">
+            <span class="hero-zoom-hint" aria-hidden="true">Tap to enlarge</span>
+          </button>
           <figcaption>Conceptual rendering · subject to change</figcaption>
         </figure>
       </div>
@@ -286,7 +303,7 @@
               <p class="eyebrow">Wolf Pen Gap</p>
               <h3>Ride out from the park</h3>
               <div class="prose">
-                <p>El Heffe sits within about a 10-minute drive of Wolf Pen Gap — the trail system people come to this part of the Ouachitas to ride.</p>
+                <p>El Hefe sits within about a 10-minute drive of Wolf Pen Gap — the trail system people come to this part of the Ouachitas to ride.</p>
                 <p>Because the park is planned as buggy-accessible, you can keep the side-by-sides handy and head toward the trails from here instead of trailering over for every run.</p>
               </div>
             </article>
@@ -294,7 +311,7 @@
               <p class="eyebrow">Mena, Arkansas</p>
               <h3>A good place to call home</h3>
               <div class="prose">
-                <p>Between the mountains, trails, outdoor recreation, and local businesses, Mena made sense for El Heffe from day one.</p>
+                <p>Between the mountains, trails, outdoor recreation, and local businesses, Mena made sense for El Hefe from day one.</p>
                 <p>We want the park to complement what’s already here — another place to stay that points people toward eating local, shopping local, and exploring Polk County.</p>
               </div>
             </article>
@@ -373,7 +390,7 @@
         </div>
 
         <div class="contact-direct reveal">
-          <a href="mailto:hello@elheffervpark.com">hello@elheffervpark.com</a>
+          <a href="mailto:hello@elhefervpark.com">hello@elhefervpark.com</a>
           <span aria-hidden="true">·</span>
           <span>Mena, Arkansas</span>
         </div>
@@ -407,10 +424,10 @@
   <footer class="site-footer">
     <div class="wrap footer-inner">
       <img src="images/logo.png" alt="" width="72" height="72">
-      <p class="footer-name">El Heffe RV Park</p>
+      <p class="footer-name">El Hefe RV Park</p>
       <p>Mena, Arkansas · Coming Soon</p>
       <p class="footer-links">
-        <a href="mailto:hello@elheffervpark.com">Email</a>
+        <a href="mailto:hello@elhefervpark.com">Email</a>
         <a href="#updates">Updates</a>
         <a href="#progress">Build plan</a>
       </p>
@@ -418,9 +435,17 @@
         <a href="#" aria-label="Facebook (coming soon)">Facebook</a>
         <a href="#" aria-label="Instagram (coming soon)">Instagram</a>
       </p>
-      <p class="copyright">© 2026 El Heffe RV Park. All Rights Reserved.</p>
+      <p class="copyright">© 2026 El Hefe RV Park. All Rights Reserved.</p>
     </div>
   </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <div class="lightbox-backdrop" data-lightbox-close tabindex="-1"></div>
+    <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Enlarged park layout">
+      <button type="button" class="lightbox-close" data-lightbox-close aria-label="Close enlarged image">Close</button>
+      <img class="lightbox-image" id="lightbox-image" alt="" decoding="async">
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
