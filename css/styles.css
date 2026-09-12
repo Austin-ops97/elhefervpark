@@ -1114,8 +1114,8 @@ p:last-child {
   }
 
   .site-nav a {
-    padding: 0.8rem 1.15rem;
-    min-height: 2.55rem;
+    padding: 0.85rem 1.35rem;
+    min-height: 2.65rem;
     border-bottom: 1px solid rgba(196, 163, 90, 0.12);
   }
 
@@ -1146,25 +1146,25 @@ p:last-child {
   }
 
   .hero .kicker {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.65rem;
   }
 
   .hero h1 {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.9rem;
     text-shadow: 0 2px 20px rgba(16, 40, 27, 0.65);
   }
 
   .hero-lead {
     max-width: none;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.35rem;
     color: #f3ece0;
     font-weight: 500;
     text-shadow: 0 1px 12px rgba(16, 40, 27, 0.65);
   }
 
   .hero-actions {
-    gap: 0.65rem;
-    margin-bottom: 0.85rem;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
   }
 
   .hero-note {
@@ -1172,7 +1172,7 @@ p:last-child {
   }
 
   .highlights {
-    padding: 0.35rem 0;
+    padding: 0.65rem 0;
   }
 
   .about-grid,
@@ -1279,11 +1279,11 @@ p:last-child {
 
 @media (max-width: 700px) {
   .wrap {
-    padding: 0 1.35rem;
+    padding: 0 1.5rem;
   }
 
   .nav-inner {
-    padding: 0 1.1rem;
+    padding: 0 1.2rem;
   }
 
   .highlights-grid {
@@ -1292,26 +1292,26 @@ p:last-child {
   }
 
   .highlight {
-    padding: 0.85rem 0.4rem;
+    padding: 0.95rem 0.5rem;
   }
 
   .highlight strong {
     font-size: 1.05rem;
-    margin-bottom: 0.18rem;
+    margin-bottom: 0.2rem;
   }
 
   .highlight span {
     font-size: 0.9rem;
-    line-height: 1.35;
+    line-height: 1.4;
   }
 
   .highlight:not(:last-child) {
-    padding-bottom: 0.85rem;
+    padding-bottom: 0.95rem;
     border-bottom: 1px solid rgba(196, 163, 90, 0.28);
   }
 
   .highlight:not(:first-child) {
-    padding-top: 0.85rem;
+    padding-top: 0.95rem;
   }
 
   .timeline {
@@ -1363,20 +1363,20 @@ p:last-child {
 
   .hero-actions {
     flex-direction: column;
-    gap: 0.65rem;
+    gap: 0.75rem;
   }
 
   .hero-actions .btn {
     width: 100%;
-    min-height: 2.6rem;
-    padding: 0.6rem 1rem;
+    min-height: 2.65rem;
+    padding: 0.65rem 1rem;
     font-size: 0.78rem;
   }
 
   .hero-lead {
-    font-size: 0.97rem;
-    line-height: 1.55;
-    margin-bottom: 1.15rem;
+    font-size: 0.98rem;
+    line-height: 1.58;
+    margin-bottom: 1.3rem;
   }
 
   .hero-note {
